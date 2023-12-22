@@ -1,0 +1,35 @@
+
+:root{
+    --headingBG : #25C2A0;
+    --headingColor : #000000;
+    --gridColor : #0000000;
+    --gridBorders : #FFFFFF;
+}
+
+.App{
+    color: #E3E3E3;
+    background-color: #242526;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.App-header{
+    color: var(--headingColor);
+    background-color: var(--headingBG);
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Estilos para la grilla */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* Define 3 columnas de 100px cada una */
+    grid-gap: 0px
+  }
+  
+  .grid-item {
+    width: 100px;
+    height: 100px;
+    background-color: var(--gridColor);
+    border: 1px solid var(--gridBorders);
+  }

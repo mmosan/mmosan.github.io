@@ -4,32 +4,52 @@
     --headingColor : #000000;
     --gridColor : #0000000;
     --gridBorders : #FFFFFF;
+    --bgColor : #242526;
+    --color: #E3E3E3;
 }
 
+body {
+  margin: 0;
+}
 .App{
-    color: #E3E3E3;
-    background-color: #242526;
+    color: var(--color);
+    background-color: var(--bgColor);
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
-.App-header{
-    color: var(--headingColor);
-    background-color: var(--headingBG);
-    text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-/* Estilos para la grilla */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 100px); /* Define 3 columnas de 100px cada una */
-    grid-gap: 0px
+@media only screen and (min-width: 900px) {
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 5%;
+    background-color: var(--bgColor);
   }
-  
-  .grid-item {
-    width: 100px;
-    height: 100px;
-    background-color: var(--gridColor);
-    border: 1px solid var(--gridBorders);
+
+  .headerContainer{
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 110%;
+    font-weight: bold;
+  }
+}  
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--bgColor);
+
+  }
+}
+  .cuerpo {
+    width: 100%;
+    height: 110rem;
+    
   }

@@ -2,6 +2,5 @@
     color: var(--headingColor);
     background-color: var(--headingBG);
     text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    width: 100%;
 }
